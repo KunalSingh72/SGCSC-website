@@ -1,0 +1,13 @@
+.scroll-track {
+  animation: scroll-horizontal linear infinite;
+  will-change: transform;
+}
+
+@keyframes scroll-horizontal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
