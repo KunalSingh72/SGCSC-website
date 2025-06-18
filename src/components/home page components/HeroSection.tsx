@@ -5,7 +5,7 @@ const images = [
   "/hero1.jpg",
   "/hero2.jpg",
   "/hero3.jpg",
-  "/hero4.jpg",
+  "/hero4.jpg", 
 ];
 
 export default function HeroSection() {
