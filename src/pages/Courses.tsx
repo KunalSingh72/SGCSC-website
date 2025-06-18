@@ -1,22 +1,28 @@
 import { Link } from "react-router-dom";
 
-const longTermCourses = [
+type Course = {
+  title: string;
+  duration: string;
+  image: string;
+};
+
+const longTermCourses: Course[] = [
   { title: "Diploma in Computer Applications (DCA)", duration: "1 Year", image: "/courses/dca.jpg" },
   { title: "Advanced Diploma in Computer Programming", duration: "1 Year", image: "/courses/adcp.jpg" },
 ];
 
-const shortTermCourses = [
+const shortTermCourses: Course[] = [
   { title: "Basic Computer Training", duration: "6 Months", image: "/courses/basic.jpg" },
   { title: "Office Automation", duration: "6 Months", image: "/courses/office.jpg" },
 ];
 
-const certificateCourses = [
+const certificateCourses: Course[] = [
   { title: "Tally & GST", duration: "3 Months", image: "/courses/tally.jpg" },
   { title: "Graphic Designing", duration: "3 Months", image: "/courses/graphic.jpg" },
   { title: "Web Designing", duration: "3 Months", image: "/courses/web.jpg" },
 ];
 
-const renderCourseCard = (course: any, index: number) => (
+const renderCourseCard = (course: Course, index: number) => (
   <div
     key={index}
     className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300"
