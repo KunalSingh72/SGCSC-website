@@ -51,7 +51,7 @@ export default function HeroSection() {
           </p>
           <Link
             to="/courses"
-            className="bg-green-600  font-semibold px-6 py-2 rounded shadow hover:bg-yellow-300 transition"
+            className="bg-green-600  font-semibold px-6 py-2 rounded shadow hover:bg-green-700 transition"
           >
             Browse Courses
           </Link>
